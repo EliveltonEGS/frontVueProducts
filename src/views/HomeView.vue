@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/categories/TheWelcome.vue'
+import GetAll from "../components/categories/GetAll.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <GetAll />
   </main>
 </template>
