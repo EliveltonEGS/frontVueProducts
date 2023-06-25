@@ -4,6 +4,12 @@ import GetAll from "../components/categories/GetAll.vue";
 
 <template>
   <main>
-    <GetAll />
+    <GetAll></GetAll>
   </main>
 </template>
+
+<script>
+export default {   
+    name: 'categories'
+}
+</script>

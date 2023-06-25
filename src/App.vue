@@ -3,12 +3,16 @@
 </script>
 
 <template>
-  <nav>
-    <RouterLink to="/categories">Categories</RouterLink>
-    <!-- <RouterLink to="/about">About</RouterLink> -->
-  </nav>
+    <div>
+        <nav>
+            <RouterLink to="/categories">Categories</RouterLink>
+            <!-- <RouterLink to="/about">About</RouterLink> -->
+        </nav>
 
-  <RouterView />
+        <div>
+            <RouterView />
+        </div>
+    </div>
 </template>
 
 <style scoped>

@@ -1,14 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import UpdateView from '../views/UpdateView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/categories',
-      name: 'categories',
-      component: HomeView
-    },
+    {path: '/categories', name: 'categories', component: HomeView},
+    {path: '/categories/:id', name: 'udpateCategory', component: UpdateView},
     // {
     //   path: '/',
     //   name: 'home',
