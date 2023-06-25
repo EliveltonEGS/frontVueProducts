@@ -25,8 +25,7 @@
                             <td>{{ item.created_at }}</td>
                             <td>{{ item.updated_at }}</td>
                             <td>
-                                <a href="#" class="btn btn-warning btn-sm">Edit</a>
-                                <a href="#" class="btn btn-danger btn-sm m-1">Delete</a>
+                                <RouterLink :to="{ path: '/categories/' + item.id }" class="btn btn-warning btn-sm">Edit</RouterLink>
                             </td>
                         </tr>
                     </tbody>
@@ -40,12 +39,13 @@
 </template>
 
 <script>
-import axios from "axios"
+
+import categoryService from '../../services/CategoryDataService'
 
 export default {
     data() {
         return {
-            categories: []
+            categories: [],
         };
         },
         mounted() {
@@ -53,7 +53,11 @@ export default {
         },
         methods: {
             getAll() {
-                axios.get(`http://localhost:8080/category`).then(res => {this.categories = res.data.data})
+                categoryService.getAll().then(res => {
+                   this.categories = res.data.data
+                }).catch(e => {
+                    console.log(e)
+                })
             }
         }
 };
