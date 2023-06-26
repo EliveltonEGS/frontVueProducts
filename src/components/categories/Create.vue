@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <div class="text-center">
-            <h3>Update Category</h3>
+            <h3>Create Category</h3>
         </div>
         <div class="card">
             <div class="card-header">
-                All Categories
+                Create Category
             </div>
             <div class="card-body">
                 <div class="row g-3">

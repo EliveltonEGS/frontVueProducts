@@ -5,7 +5,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                All Categories
+                Update Category
             </div>
             <div class="card-body">
                 <div class="row g-3">
