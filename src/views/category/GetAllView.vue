@@ -1,10 +1,10 @@
 <script setup>
-import GetAll from "../components/categories/GetAll.vue";
+import GetAll from "../../components/categories/GetAll.vue";
 </script>
 
 <template>
   <main>
-    <GetAll></GetAll>
+    <GetAll/>
   </main>
 </template>
 
