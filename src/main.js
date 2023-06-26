@@ -1,4 +1,5 @@
 import './assets/main.css'
+import './assets/bootstrap/js/bootstrap5.0.2_dist_js_bootstrap.bundle.min'
 
 import { createApp } from 'vue'
 import App from './App.vue'
