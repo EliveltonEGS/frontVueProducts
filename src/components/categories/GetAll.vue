@@ -8,6 +8,9 @@
                 All Categories
             </div>
             <div class="card-body">
+                <div class="text-center mb-3">
+                    <RouterLink :to="{ path: '/categories/create' }" class="btn btn-primary btn-sm">New</RouterLink>
+                </div>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -25,7 +28,7 @@
                             <td>{{ item.created_at }}</td>
                             <td>{{ item.updated_at }}</td>
                             <td>
-                                <RouterLink :to="{ path: '/categories/' + item.id }" class="btn btn-warning btn-sm">Edit</RouterLink>
+                                <RouterLink :to="{ path: '/categories/' + item.id + '/edit'}" class="btn btn-warning btn-sm">Edit</RouterLink>
                             </td>
                         </tr>
                     </tbody>
